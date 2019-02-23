@@ -1,1 +1,42 @@
-h1 {color: blueviolet}
+
+h3 {
+    font-weight: normal;
+   }
+
+html {
+    font-size: 32px;
+}
+
+
+.podcasts {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.podcasts img {
+    width: 300px;
+    height:auto;
+}
+
+
+@media only screen and (min-width: 480px) {
+    html {
+        font-size: 16px;
+    }
+    
+    .podcasts {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+    }
+
+    .podcasts li {
+        width: 50%;
+    }
+    .podcasts img {
+        width: 100px;    
+    }
+
+}
